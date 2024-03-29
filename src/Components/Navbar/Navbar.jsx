@@ -18,6 +18,7 @@ const Menu = [
     name: "About",
     link: "/#about",
   },
+ 
 ];
 const Navbar = () => {
   return (
@@ -45,6 +46,8 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
+              <button className="py-4 px-4 hover:text-green-500 "><a href="/#Login">Login</a></button>
+              <button className="py-4 px-4 hover:text-green-500 "><a href="/#Signup">Signup</a></button>
   
             </div>
           </div>
