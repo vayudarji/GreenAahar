@@ -30,15 +30,19 @@ function Login() {
         <div>
             <label htmlFor="">Enter Email</label>
             <input type="email"
-            onChange={handleEmail} />
+            onChange={handleEmail}
+            className='outline' />
         </div>
         <div>
             <label htmlFor="">Enter password</label>
             <input type="password"
-            onChange={handlePass} />
+            onChange={handlePass}
+            className='outline' />
         </div>
         <div>
-            <button onClick={signUp}>Signup</button>
+            <button onClick={signUp}
+                className='text-white bg-blue-700 rounded-lg'
+            >Signup</button>
         </div>
     </div>
   )

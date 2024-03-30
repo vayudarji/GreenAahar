@@ -1,9 +1,10 @@
 
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import React, { useState } from 'react'
+import { app } from '../../firebase'
 
 function Signin() {
-    const auth = getAuth()
+    const auth = getAuth(app)
     const [password , setPassword] = useState()
     const [email , setEmail] = useState()
 
@@ -23,15 +24,19 @@ function Signin() {
         <div>
             <label htmlFor="">Enter email</label>
             <input type="email"
-                onChange={handleEmail} />
+                onChange={handleEmail}
+                className='outline' />
         </div>
         <div>
             <label >Enter password</label>
             <input type="password"
-                onChange={handlePassword} />
+                onChange={handlePassword}
+                className='outline' />
         </div>
         <div>
-            <button onClick={signIn}>Signin</button>
+            <button onClick={signIn} 
+                className='text-white bg-blue-700 rounded-lg'
+            >Signin</button>
         </div>
     </div>
   )
