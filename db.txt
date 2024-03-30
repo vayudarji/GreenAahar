@@ -1,0 +1,28 @@
+Restaurants
+  - RestaurantID_1
+    - name: "Restaurant A"
+    - email: "restauranta@example.com"
+    - phone: "123-456-7890"
+    - address: "123 Main St, City, Country"
+    - location:
+        - latitude: 51.5033640
+        - longitude: -0.1276250
+    - operatingHours: "Mon-Sun: 9am-10pm"
+    - cuisine: "Italian"
+    - logo: "restaurant_a_logo.jpg"
+    - listings
+      - ListingID_1
+        - foodItem: "Leftover Pasta"
+        - quantity: "Large portion"
+        - expirationDate: "2024-04-01T18:00:00Z"
+        - pickupLocation: "Kitchen counter"
+        - price: 5.99
+        - description: "Spaghetti with marinara sauce"
+        - images
+          - image1: "leftover_pasta_image.jpg"
+      - ListingID_2
+        - foodItem: "Leftover Pizza"
+        - quantity: "2 slices"
+        - expirationDate: "2024-04-01T18:00:00Z"
+        - pickupLocation: "Refrigerator"
+        - price: 3.99

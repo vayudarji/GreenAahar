@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import React from 'react'
+import Logout from "./Logout";
 
 function Layout() {
   return (
@@ -9,10 +10,14 @@ function Layout() {
                 <Link to="/home">Home</Link>
             </li>
             <li>
-                <Link to="/Signup">Signup</Link>
+                <Link to="/">Signup and SignIn</Link>
             </li>
             <li>
-                <Link to="/Signin">Signin</Link>
+                <Link to="/RestaurantProfile">Restaurant Profile</Link>
+            </li>
+            <Logout />
+            <li>
+                <Link to="/RestaurantList">Product listing</Link>
             </li>
         </ul>
     </nav>

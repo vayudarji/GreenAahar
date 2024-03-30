@@ -1,8 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { app } from '../../firebase';
+import {UIDContext} from "../context/UserID"
 
 function Login() {
+
+    //  const userIDState = useContext(UIDContext);
+    //  console.log(userIDState.userID);
+
+    
 
     const auth = getAuth(app);
 
@@ -12,7 +18,9 @@ function Login() {
     
         const signUp = () => {
             createUserWithEmailAndPassword(auth , email , password )
-                .then((value)=>(console.log(value)))
+                .then((value)=>{console.log(value)
+                // userIDState.setUserID(value.uid)
+            })
                 .catch((error)=>(console.log(error)))
         }
     
